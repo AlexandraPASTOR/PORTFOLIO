@@ -5,6 +5,7 @@ import profil from '../assets/profil.png';
 import cv from '../assets/cv.png';
 import github from '../assets/github.png';
 import linkedin from '../assets/linkedin.png';
+import cvpdf from '../assets/CV-A.PASTOR.pdf';
 
 function Contact() {
   const form = useRef<HTMLFormElement>(null);
@@ -171,7 +172,7 @@ function Contact() {
         <section className="mt-12 text-center text-[var(--color-secondary)]">
           <p className="text-xl mb-4 font-semibold">Retrouvez mes autres profils :</p>
           <div className="flex justify-center gap-6 text-[var(--color-secondary)] text-base">
-            <a href="/src/assets/CV-A.PASTOR.pdf" download className="hover:underline">
+            <a href={cvpdf} download className="hover:underline">
               <img src={cv} alt="Logo CV" className="w-8 h-8 bg-white rounded-full border-1 border-[var(--color-tertiary)]" />
             </a>
             <a href="https://github.com/AlexandraPASTOR" target="_blank" rel="noopener noreferrer" className="hover:underline">
