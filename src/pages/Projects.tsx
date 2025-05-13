@@ -1,5 +1,8 @@
 import ZoomImage from "../components/ZoomImage";
 
+import wildeats from '../assets/wildeats.png';
+import straszik from '../assets/straszik.png';
+
 function Projects() {
   const projects = [
     {
@@ -9,7 +12,7 @@ function Projects() {
       objectif:
         'Faire gagner du temps aux étudiants tout en leur offrant une expérience culinaire variée et simplifiée.',
       technologies_utilisées: 'HTML, CSS, JavaScript',
-      imageUrl: '/public/wildeats.png',
+      imageUrl: {wildeats},
       gitHubLink: 'https://github.com/AlexandraPASTOR/Project-WildEats/',
       link: 'https://alexandrapastor.github.io/Project-WildEats/',
     },
@@ -20,7 +23,7 @@ function Projects() {
       objectif:
         "Donner une visibilité professionnelle au groupe et renforcer le lien avec leur communauté de fans.",
       technologies_utilisées: 'React, Tailwind CSS, API custom, Local Storage',
-      imageUrl: '/public/straszik.png',
+      imageUrl: { straszik },
       gitHubLink: 'https://github.com/wildcodeschool-2025-03/straszik',
       link: 'https://straszik-client.vercel.app/',
     },
@@ -53,7 +56,7 @@ function Projects() {
 
             > {project.imageUrl && (<div className="overflow-y-auto max-h-[300px] p-6">
               <ZoomImage
-                src={project.imageUrl}
+                src={typeof project.imageUrl === 'string' ? project.imageUrl : Object.values(project.imageUrl)[0]}
                 alt={project.title}
                 className="object-cover w-full rounded-2xl"
               /></div>)}

@@ -2,7 +2,7 @@
 
 body{
     background-color: gray-100;
-    cursor: url('./navi-cursor.svg') 16 16, auto;
+    cursor: url('./assets/navi-cursor.svg') 16 16, auto;
 }
 
 :root {

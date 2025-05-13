@@ -38,7 +38,11 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+],
+{
+    basename: "/PORTFOLIO", 
+  }
+);
 
 // rendering
 

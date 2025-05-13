@@ -3,6 +3,8 @@ import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import BackgroundTrail from "../components/BackgroundTrail";
 
+import logo from "../assets/logo.png";
+
 
 function HomePage() {
   return (
@@ -24,7 +26,7 @@ function HomePage() {
           {/* Logo */}
           <div className="mx-auto">
             <img
-              src="./public/logo.png"
+              src={logo}
               alt="Logo"
               className="w-40 h-30 md:w-60 md:h-50 object-cover"
             />

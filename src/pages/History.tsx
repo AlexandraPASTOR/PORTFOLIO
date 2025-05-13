@@ -1,11 +1,16 @@
 import { motion } from "framer-motion";
-import { useTheme } from "../context/ThemeContext.jsx";
+import { useTheme } from "../context/ThemeContext.js";
+
+import neona1t from "../assets/neonat1.png";
+import gr1 from "../assets/gr1.png";
+import neonat2 from "../assets/neonat2.png";
+import gr2 from "../assets/gr2.png";
 
 function History() {
   const { theme } = useTheme();
 
-  const imgSrcGR = theme === 'dark' ? '/gr1.png' : '/gr2.png';
-  const imgSrcNeonat = theme === 'dark' ? '/neonat1.png' : '/neonat2.png';
+  const imgSrcGR = theme === 'dark' ? gr1 : gr2;
+  const imgSrcNeonat = theme === 'dark' ? neona1t : neonat2;
 
   return (
     <>

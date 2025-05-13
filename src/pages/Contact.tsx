@@ -1,6 +1,11 @@
 import emailjs from 'emailjs-com';
 import { useRef, useState, useEffect } from 'react';
 
+import profil from '../assets/profil.png';
+import cv from '../assets/cv.png';
+import github from '../assets/github.png';
+import linkedin from '../assets/linkedin.png';
+
 function Contact() {
   const form = useRef<HTMLFormElement>(null);
   const [statusMessage, setStatusMessage] = useState<string | null>(null);
@@ -88,7 +93,7 @@ function Contact() {
           {/* Contact*/}
           <div className="relative w-2/3 lg:w-1/4 bg-[var(--color-block)] p-6 rounded-lg shadow-lg z-10 mx-auto md:mx-0">
             <img
-              src="/public/profil.png"
+              src={profil}
               alt="Alexandra PASTOR"
               className="absolute top-0 left-0 w-20 h-20 object-cover rounded-full border-2 border-[var(--color-tertiary)] bg-white/85 transform -translate-x-1/2 -translate-y-1/2"
             />
@@ -166,14 +171,14 @@ function Contact() {
         <section className="mt-12 text-center text-[var(--color-secondary)]">
           <p className="text-xl mb-4 font-semibold">Retrouvez mes autres profils :</p>
           <div className="flex justify-center gap-6 text-[var(--color-secondary)] text-base">
-            <a href="/public/CV-A.PASTOR.pdf" download className="hover:underline">
-              <img src="/public/cv.png" alt="Logo CV" className="w-8 h-8 bg-white rounded-full border-1 border-[var(--color-tertiary)]" />
+            <a href="/CV-A.PASTOR.pdf" download className="hover:underline">
+              <img src={cv} alt="Logo CV" className="w-8 h-8 bg-white rounded-full border-1 border-[var(--color-tertiary)]" />
             </a>
             <a href="https://github.com/AlexandraPASTOR" target="_blank" rel="noopener noreferrer" className="hover:underline">
-              <img src="/public/github.png" alt="Logo GitHub" className="w-8 h-8 bg-white rounded-full border-1 border-[var(--color-tertiary)]" />
+              <img src={github} alt="Logo GitHub" className="w-8 h-8 bg-white rounded-full border-1 border-[var(--color-tertiary)]" />
             </a>
             <a href="https://www.linkedin.com/in/alexandrapastor" target="_blank" rel="noopener noreferrer" className="hover:underline">
-              <img src="/public/linkedin.png" alt="Logo LinkedIn" className="w-8 h-8 bg-white rounded-full border-1 border-[var(--color-tertiary)]" />
+              <img src={linkedin} alt="Logo LinkedIn" className="w-8 h-8 bg-white rounded-full border-1 border-[var(--color-tertiary)]" />
             </a>
           </div>
         </section>

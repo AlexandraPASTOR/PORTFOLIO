@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 
+import logo1 from '../assets/logo1.png';
+
 function Header() {
   return (
     <>
@@ -9,7 +11,7 @@ function Header() {
 {/* Logo section */}
       <Link to="/">
       <img
-        src="/public/logo1.png"
+        src={logo1}
         alt="Logo"
         className="w-14 object-cover"
       /></Link>
