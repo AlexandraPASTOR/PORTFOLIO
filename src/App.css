@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+body{
+    background-color: gray-100;
+    cursor: url('./navi-cursor.svg') 16 16, auto;
+}
+
+:root {
+    --color-primary: white; /* Fond principal clair */
+     --color-secondary: #333333; /* Texte sombre */
+  --color-tertiary: #c39f2d; /* Accent plus lumineux */
+  --color-hover: #C5A46D; /* Variante hover adaptée */
+  --color-block: #F2F2F3; /* Fond de bloc gris clair */
+}
+
+/*Dark mode*/
+[data-theme="dark"] {
+  --color-primary: rgb(0, 0, 0);      /* Fond principal sombre */
+  --color-secondary: #f2f2f2;    /* Texte clair */
+  --color-tertiary: #d1af3d;     /* Accent plus lumineux */
+  --color-hover: #92723a;        /* Variante hover adaptée */
+  --color-block: #53514b;        /* Fond de bloc gris foncé */
+}

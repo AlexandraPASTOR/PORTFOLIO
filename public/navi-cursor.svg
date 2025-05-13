@@ -1,0 +1,27 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="54"
+  height="54"
+  viewBox="0 0 100 100"
+>
+  <!-- Halo doré unique -->
+  <circle cx="50" cy="50" r="18" fill="url(#goldGradient)" opacity="0.15" />
+
+  <!-- Centre lumineux -->
+  <circle cx="50" cy="50" r="10" fill="url(#goldGradient)" opacity="0.8" />
+
+  <!-- Ailes dorées plus petites et moins opaques -->
+  <polygon points="40,15 45,25 50,50 35,35" fill="url(#goldGradient)" opacity="0.2" />
+  <polygon points="60,15 55,25 50,50 65,35" fill="url(#goldGradient)" opacity="0.2" />
+  <polygon points="40,85 45,75 50,50 35,65" fill="url(#goldGradient)" opacity="0.2" />
+  <polygon points="60,85 55,75 50,50 65,65" fill="url(#goldGradient)" opacity="0.2" />
+
+  <!-- Dégradé doré -->
+  <defs>
+    <radialGradient id="goldGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </radialGradient>
+  </defs>
+</svg>
+
