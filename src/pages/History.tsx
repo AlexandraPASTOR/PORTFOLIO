@@ -14,7 +14,7 @@ function History() {
 
   return (
     <>
-      <section className="relative w-full flex flex-col items-center justify-start px-4 pb-8">
+      <section className="relative w-full flex flex-col items-center justify-start px-4 pb-8 overflow-x-hidden">
 
         {/* Images décoratives */}
         <img

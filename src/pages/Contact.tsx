@@ -92,7 +92,7 @@ function Contact() {
         <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:gap-8 lg:gap-30">
           
           {/* Contact*/}
-          <div className="relative w-2/3 lg:w-1/4 bg-[var(--color-block)] p-6 rounded-lg shadow-lg z-10 mx-auto md:mx-0">
+          <div className="relative w-3/4 lg:w-1/4 bg-[var(--color-block)] p-6 rounded-lg shadow-lg z-10 mx-auto md:mx-0">
             <img
               src={profil}
               alt="Alexandra PASTOR"
@@ -116,6 +116,14 @@ function Contact() {
                 </tr>
               </tbody>
             </table>
+            <div className=' flex flex-col md:flex-row md:items-center mt-2 gap-2 '>
+            <p className="text-xs text-[var(--color-secondary)] ml-2">
+  Vous pouvez télécharger mon CV ici :
+</p>
+<a href={cvpdf} download className="hover:underline self-center md:self-auto">
+              <img src={cv} alt="Logo CV" className="w-8 h-full bg-[var(--color-primary)] rounded-full border-1 border-[var(--color-tertiary)]" />
+            </a>
+            </div>
           </div>
 
           {/* Formulaire */}
@@ -172,10 +180,7 @@ function Contact() {
         <section className="mt-12 text-center text-[var(--color-secondary)]">
           <p className="text-xl mb-4 font-semibold">Retrouvez mes autres profils :</p>
           <div className="flex justify-center gap-6 text-[var(--color-secondary)] text-base">
-            <a href={cvpdf} download className="hover:underline">
-              <img src={cv} alt="Logo CV" className="w-8 h-8 bg-white rounded-full border-1 border-[var(--color-tertiary)]" />
-            </a>
-            <a href="https://github.com/AlexandraPASTOR" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                        <a href="https://github.com/AlexandraPASTOR" target="_blank" rel="noopener noreferrer" className="hover:underline">
               <img src={github} alt="Logo GitHub" className="w-8 h-8 bg-white rounded-full border-1 border-[var(--color-tertiary)]" />
             </a>
             <a href="https://www.linkedin.com/in/alexandrapastor" target="_blank" rel="noopener noreferrer" className="hover:underline">
