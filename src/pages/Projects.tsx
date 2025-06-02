@@ -2,6 +2,9 @@ import ZoomImage from "../components/ZoomImage";
 
 import wildeats from '../assets/wildeats.png';
 import straszik from '../assets/straszik.png';
+import cosmiccode from '../assets/cosmic-code.png';
+import takutaku from '../assets/takutaku.png';
+import portfolio from '../assets/portfolio.png';
 
 function Projects() {
   const projects = [
@@ -11,7 +14,7 @@ function Projects() {
         'Plateforme intuitive et interactive conçue pour la communauté de la Wild Code School. Elle permet aux étudiants de découvrir les bonnes adresses autour du campus mais également de réserver son repas à la cafétéria.',
       objectif:
         'Faire gagner du temps aux étudiants tout en leur offrant une expérience culinaire variée et simplifiée.',
-      technologies_utilisées: 'HTML, CSS, JavaScript',
+      technologies_utilisées: 'HTML, CSS, JavaScript, Figma, Git',
       imageUrl: {wildeats},
       gitHubLink: 'https://github.com/AlexandraPASTOR/Project-WildEats/',
       link: 'https://alexandrapastor.github.io/Project-WildEats/',
@@ -22,20 +25,38 @@ function Projects() {
         "Site officiel d’un groupe de rock alsacien, alliant l'énergie brute des années rétro à une forte identité locale. Il met en lumière leur univers à travers leurs performances live, leurs actualités, leurs anecdotes de scène et leurs produits dérivés. ",
       objectif:
         "Donner une visibilité professionnelle au groupe et renforcer le lien avec leur communauté de fans.",
-      technologies_utilisées: 'React, Tailwind CSS, API custom, Local Storage',
+      technologies_utilisées: 'React, Tailwind CSS, Figma, API custom, Local Storage, Git',
       imageUrl: { straszik },
       gitHubLink: 'https://github.com/wildcodeschool-2025-03/straszik',
       link: 'https://straszik-client.vercel.app/',
     },
     {
-      title: 'Projet 3',
+      title: "Cosmic'Code",
       description:
-        'A venir.',
-      objectif: '',
-      technologies_utilisées: '',
-      imageUrl: '',
-      gitHubLink: '',
+        'Application mobile ludique développée en 48 heures lors d’un hackathon. Elle met en scène Biome, un petit alien qui explore la galaxie. Chaque planète représente un thème clé du code, permettant à l’utilisateur de progresser tout en accompagnant Biome dans sa conquête de l’univers.',
+      objectif: 'Offrir une introduction ludique à la programmation pour les débutants.',
+      technologies_utilisées: 'React, Tailwind CSS, Excalidraw, Git',
+      imageUrl: {cosmiccode},
+      gitHubLink: 'https://github.com/AlexandraPASTOR/CosmicCode',
+      link: 'https://cosmi-code.vercel.app/',
+    },
+        {
+      title: "TakuTaku",
+      description:"En cours de développement : Platforme de streaming d’animés qui permet de rechercher, visionner et suivre facilement ses animés favoris grâce à une interface claire, un affichage par fiches et un historique de visionnage intégré.",
+      objectif: 'Centraliser, suivre et enrichir son expérience de visionnage d’animés, en toute simplicité.',
+      technologies_utilisées: 'React, Tailwind CSS, Figma, API, Express, SQL, Git',
+      imageUrl: {takutaku},
+      gitHubLink: '#',
       link: '#',
+    },
+      {
+      title: "Portfolio",
+      description:"Portfolio personnel sur lequel vous vous trouvez actuellement ! Ici, je vous ouvre les portes de mon parcours, pour vous faire découvrir mes projets, mes compétences, et les expériences qui m’ont façonnée.",
+      objectif: 'Vous faire découvrir mon univers avec passion et vous donner envie d’aller plus loin.',
+      technologies_utilisées: 'React, Tailwind CSS, Git',
+      imageUrl: {portfolio},
+      gitHubLink: 'https://github.com/AlexandraPASTOR/PORTFOLIO',
+      link: 'https://portfolio-alexandrapastors-projects.vercel.app/',
     },
   ];
 
