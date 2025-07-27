@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 body{
     background-color: gray-100;
     cursor: url('./assets/navi-cursor.svg') 16 16, auto;
@@ -21,3 +22,52 @@ body{
   --color-hover: #92723a;        /* Variante hover adaptée */
   --color-block: #53514b;        /* Fond de bloc gris foncé */
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-tertiary);
+  background-color: var(--color-primary);
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-color: var(--color-tertiary);
+  border-width: 1px;
+}
+
+:hover.swiper-button-next,
+:hover.swiper-button-prev {
+  background-color: var(--color-hover);
+  color: var(--color-primary);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 16px;
+}
+
+.swiper-pagination-bullet {
+  background: var(--color-tertiary);
+  opacity: 0.4;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* index.css */
+.scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #b88b29; /* couleur tertiary */
+  border-radius: 4px;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: transparent;
+}
+

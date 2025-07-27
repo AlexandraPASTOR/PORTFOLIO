@@ -32,7 +32,7 @@ const BackgroundTrail = () => {
         id: Date.now(),
         x: Math.random() * window.innerWidth,
         y: Math.random() * window.innerHeight,
-        size: Math.random() * 5 + 2, // Taille entre 2 et 7
+        size: Math.random() * 2 + 1, // Taille entre 1 et 3
         duration: Math.random() * 8 + 5, // Durée entre 5 et 13 secondes
       };
 
