@@ -183,7 +183,7 @@ function Contact() {
                         <a href="https://github.com/AlexandraPASTOR" target="_blank" rel="noopener noreferrer" className="hover:underline">
               <img src={github} alt="Logo GitHub" className="w-8 h-8 bg-white rounded-full border-1 border-[var(--color-tertiary)]" />
             </a>
-            <a href="https://www.linkedin.com/in/alexandrapastor" target="_blank" rel="noopener noreferrer" className="hover:underline">
+            <a href="https://www.linkedin.com/in/pastoralex" target="_blank" rel="noopener noreferrer" className="hover:underline">
               <img src={linkedin} alt="Logo LinkedIn" className="w-8 h-8 bg-white rounded-full border-1 border-[var(--color-tertiary)]" />
             </a>
           </div>
