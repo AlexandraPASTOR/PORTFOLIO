@@ -34,7 +34,7 @@ function Contact() {
 
     // Envoi de l'email principal (administrateur)
     emailjs.send(
-      "service_z4k9p8p",
+      "service_31jm3qg",
       "template_xozx1j5", 
       {
         nom: userName,
@@ -52,7 +52,7 @@ function Contact() {
 
         // Envoi de l'email de confirmation à l'utilisateur
         emailjs.send(
-          'service_z4k9p8p', // Ton service ID EmailJS
+          'service_31jm3qg', // Ton service ID EmailJS
           'template_tgwugij',  // Template pour l'utilisateur
           {
             nom: userName,
