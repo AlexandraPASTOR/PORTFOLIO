@@ -28,7 +28,7 @@ function Projects() {
     {
       title: "Stras'Zik",
       description:
-        "Site officiel d’un groupe de rock alsacien, alliant l'énergie brute des années rétro à une forte identité locale. Il met en lumière leur univers à travers leurs performances live, leurs actualités, leurs anecdotes de scène et leurs produits dérivés.",
+        "Site officiel d’un groupe de rock alsacien, alliant l'énergie brute des années rétro à une forte identité locale. Il met en lumière leur univers à travers leurs actualités, leurs anecdotes de scène et leurs produits dérivés.",
       objectif:
         "Donner une visibilité professionnelle au groupe et renforcer le lien avec leur communauté de fans.",
       technologies_utilisées: 'React, Tailwind CSS, Figma, API custom, Local Storage, Git',
@@ -89,7 +89,7 @@ function Projects() {
         {projects.map((project, index) => (
           <SwiperSlide key={index}  className="px-12 md:px-16 pb-12 h-full">
 <div className="bg-[var(--color-block)] rounded-2xl shadow-lg p-6 flex flex-col justify-between min-h-[650px] max-h-[650px] h-full hover:shadow-xl transition-shadow duration-300">
-                <div className="scrollable overflow-x-hidden overflow-y-auto max-h-[250px] mb-4 rounded-xl">
+                <div className="scrollable overflow-x-hidden overflow-y-auto max-h-[500px] mb-4 rounded-xl">
   <ZoomImage
     src={project.imageUrl}
     alt={project.title}
