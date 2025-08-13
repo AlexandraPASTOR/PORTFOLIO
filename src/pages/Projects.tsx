@@ -11,9 +11,21 @@ import straszik from '../assets/straszik.png';
 import cosmiccode from '../assets/cosmic-code.png';
 import takutaku from '../assets/takutaku.png';
 import portfolio from '../assets/portfolio.png';
+import babyloop from '../assets/babyloop.png';
 
 function Projects() {
   const projects = [
+     {
+      title: 'BabyLoop (en cours de développement)',
+      description:
+        'Espace numérique pensé pour renforcer le lien entre les familles et les équipes de la petite enfance.',
+      objectif:
+        'Favoriser la continuité éducative et le partage d’informations sans pour autant remplacer la communication directe.',
+      technologies_utilisées: 'à venir',
+      imageUrl: babyloop,
+      gitHubLink: '#',
+      link: '#',
+    },
         {
       title: 'TakuTaku',
       description:
@@ -88,8 +100,8 @@ function Projects() {
       >
         {projects.map((project, index) => (
           <SwiperSlide key={index}  className="px-12 md:px-16 pb-12 h-full">
-<div className="bg-[var(--color-block)] rounded-2xl shadow-lg p-6 flex flex-col justify-between min-h-[650px] max-h-[650px] h-full hover:shadow-xl transition-shadow duration-300">
-                <div className="scrollable overflow-x-hidden overflow-y-auto max-h-[500px] mb-4 rounded-xl">
+<div className="bg-[var(--color-block)] rounded-2xl shadow-lg p-6 flex flex-col justify-between min-h-[850px] max-h-[850px] h-full hover:shadow-xl transition-shadow duration-300">
+                <div className="scrollable overflow-x-hidden overflow-y-auto min-h-[350px] max-h-[500px] mb-4 rounded-xl">
   <ZoomImage
     src={project.imageUrl}
     alt={project.title}
