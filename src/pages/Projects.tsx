@@ -6,7 +6,7 @@ import '../../node_modules/swiper/modules/navigation.css';
 
 import ZoomImage from '../components/ZoomImage';
 
-import wildeats from '../assets/wildeats.png';
+import aloriginedubonheur from '../assets/a-l-origine-du-bonheur.png';
 import straszik from '../assets/straszik.png';
 import cosmiccode from '../assets/cosmic-code.png';
 import takutaku from '../assets/takutaku.png';
@@ -25,6 +25,17 @@ function Projects() {
       imageUrl: babyloop,
       gitHubLink: '#',
       link: '#',
+    },
+        {
+      title: "A l'origine du bonheur",
+      description:
+        'Site vitrine professionnel pour une infirmière spécialisée en accompagnement périnatal & parental. ',
+      objectif:
+        'Proposer un espace doux, rassurant et moderne permettant aux futurs parents de découvrir les prestations, le cabinet, la FAQ et de contacter la professionnelle facilement.',
+      technologies_utilisées: 'React, Tailwind CSS, Figma, Git',
+      imageUrl: aloriginedubonheur,
+      gitHubLink: 'https://github.com/AlexandraPASTOR/a-l-origine-du-bonheur',
+      link: 'https://a-l-origine-du-bonheur.vercel.app/',
     },
         {
       title: 'TakuTaku',
@@ -57,17 +68,6 @@ function Projects() {
       imageUrl: cosmiccode,
       gitHubLink: 'https://github.com/AlexandraPASTOR/CosmicCode',
       link: 'https://cosmi-code.vercel.app/',
-    },
-    {
-      title: 'WildEats',
-      description:
-        'Plateforme intuitive et interactive conçue pour la communauté de la Wild Code School. Elle permet aux étudiants de découvrir les bonnes adresses autour du campus mais également de réserver son repas à la cafétéria.',
-      objectif:
-        'Faire gagner du temps aux étudiants tout en leur offrant une expérience culinaire variée et simplifiée.',
-      technologies_utilisées: 'HTML, CSS, JavaScript, Figma, Git',
-      imageUrl: wildeats,
-      gitHubLink: 'https://github.com/AlexandraPASTOR/Project-WildEats/',
-      link: 'https://alexandrapastor.github.io/Project-WildEats/',
     },
     {
       title: 'Portfolio',
